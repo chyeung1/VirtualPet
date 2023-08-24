@@ -1,8 +1,37 @@
-
 void setup(){
-  //some of your code here
-}
-void draw(){
-  //more of your code here
+  size(1000,1000);
 }
 
+void draw(){
+noStroke();
+fill(117,90,14);
+//body
+ellipse(550,480,190,190);
+ellipse(300,500,170,170);
+quad(300,415,550,385,550,575,300,585);
+//head
+quad(550,385,685,300,750,370,645,500);
+ellipse(735,320,105,105);
+quad(780,290,820,360,800,400,750,370);
+triangle(730,270,770,240,760,275);
+//back leg
+quad(215,500,215,700,250,700,385,500);
+quad(215,700,215,750,270,750,260,685);
+//front leg
+quad(500,575,550,700,585,700,645,500);
+quad(550,700,550,750,610,750,590,680);
+//tail
+noStroke();
+beginShape();
+curveVertex(230, 450);
+curveVertex(230, 450);
+curveVertex(180,430);
+curveVertex(180,430);
+curveVertex(120,460);
+curveVertex(120,460);
+endShape();
+}
+
+void mouseClicked(){
+ println(mouseX, mouseY);
+}
