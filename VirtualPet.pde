@@ -3,6 +3,7 @@ void setup(){
 }
 
 void draw(){
+  noStroke();
 fill(117,90,14);
 //body
 ellipse(550,480,190,190);
@@ -28,11 +29,12 @@ fill(0,0,0);
 quad(550,700,550,750,610,750,590,680);
 fill(117,90,14);
 //tail
+fill(0,0,0);
 beginShape();
 curveVertex(245,  440);
 curveVertex(245,  440);
-curveVertex(170,  415);
-curveVertex(110,  465);
+curveVertex(170,  475);
+curveVertex(160,  490);
 curveVertex(150, 580);
 curveVertex(150, 580);
 endShape();
